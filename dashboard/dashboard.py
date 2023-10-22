@@ -7,8 +7,8 @@ from datetime import datetime
 sns.set(style='dark')
 
 #Menyiapkan data
-daily_df = pd.read_csv("dashboard\day.csv")
-hourly_df = pd.read_csv("dashboard\hour.csv")
+daily_df = pd.read_csv("dashboard/day.csv")
+hourly_df = pd.read_csv("dashboard/hour.csv")
 
 #Mengubah nama kolom dataframe
 daily_df.rename(columns={'instant':'record','dteday':'datetime','yr':'year','mnth':'month','weathersit':'weather_condition',
